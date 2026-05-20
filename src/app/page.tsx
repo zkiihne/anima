@@ -8,6 +8,7 @@ import { Blog } from '@/components/sections/Blog'
 import { Careers } from '@/components/sections/Careers'
 import { Clients } from '@/components/sections/Clients'
 import { Certifications } from '@/components/sections/Certifications'
+import { Contact } from '@/components/sections/Contact'
 import { Footer } from '@/components/Footer'
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <Careers />
         <Clients />
         <Certifications />
+        <Contact />
       </main>
       <Footer />
     </>

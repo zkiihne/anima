@@ -14,15 +14,19 @@ const word = {
 
 export function Hero() {
   return (
-    <section className="flex min-h-screen flex-col items-center justify-center px-8 text-center">
+    <section className="flex min-h-[75vh] flex-col justify-end px-6 pb-16 pt-24 md:min-h-screen md:px-12 md:pb-28 md:pt-32">
       <motion.h1
         variants={container}
         initial="hidden"
         animate="show"
-        className="max-w-5xl text-6xl font-semibold leading-tight tracking-tight md:text-8xl"
+        className="font-semibold leading-[1.05] tracking-tight text-[clamp(2.5rem,13vw,11rem)]"
       >
         {hero.words.map((w, i) => (
-          <motion.span key={i} variants={word} className="inline-block mr-4">
+          <motion.span
+            key={i}
+            variants={word}
+            className={`block md:inline-block md:mr-8 ${i === hero.words.length - 1 ? 'text-[var(--muted)]' : ''}`}
+          >
             {w}
           </motion.span>
         ))}

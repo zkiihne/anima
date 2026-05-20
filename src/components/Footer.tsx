@@ -2,8 +2,8 @@ import { footer, certifications } from '@/lib/content'
 
 export function Footer() {
   return (
-    <footer className="border-t border-[var(--border)] px-8 py-16">
-      <div className="mb-16 grid grid-cols-2 gap-10 md:grid-cols-4">
+    <footer className="border-t border-[var(--border)] px-6 py-12 md:px-12 md:py-20">
+      <div className="mb-16 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4">
         <div>
           <p className="mb-6 text-xl font-semibold">anima</p>
         </div>
@@ -29,6 +29,7 @@ export function Footer() {
             <span key={cert.label} className="text-xs text-[var(--muted)]">{cert.label}</span>
           ))}
         </div>
+
       </div>
     </footer>
   )

@@ -4,7 +4,7 @@ import { AnimateIn } from '@/components/ui/AnimateIn'
 
 export function Careers() {
   return (
-    <section id="careers" className="px-8 py-24">
+    <section id="careers" className="px-6 py-16 md:px-12 md:py-24">
       <AnimateIn>
         <h2 className="mb-10 text-sm font-medium uppercase tracking-widest text-[var(--muted)]">{careers.headline}</h2>
       </AnimateIn>
