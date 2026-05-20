@@ -23,3 +23,15 @@ body {
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
 }
+
+.nav-link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.3s cubic-bezier(1, 0, 0, 1), color 0.2s;
+}
+
+.nav-link:hover {
+  background-size: 100% 1px;
+}

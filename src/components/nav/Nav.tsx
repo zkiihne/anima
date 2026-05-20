@@ -7,10 +7,17 @@ import { cn } from '@/lib/utils'
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false)
+  const [hidden, setHidden] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60)
+    let lastY = window.scrollY
+    const onScroll = () => {
+      const y = window.scrollY
+      setScrolled(y > 60)
+      setHidden(y > lastY && y > 120)
+      lastY = y
+    }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -19,11 +26,14 @@ export function Nav() {
     <>
       <motion.header
         initial={{ opacity: 0, y: -12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+        animate={{ opacity: 1, y: hidden ? -80 : 0 }}
+        transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
         className={cn(
-          'fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 transition-all duration-300 md:px-12',
-          scrolled || menuOpen ? 'bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)]' : 'bg-transparent'
+          'fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 md:px-12',
+          'transition-colors duration-300',
+          scrolled || menuOpen
+            ? 'bg-[var(--background)]/95 backdrop-blur-sm border-b border-[var(--border)]'
+            : 'bg-transparent'
         )}
       >
         <a href="/" className="text-lg font-semibold tracking-tight text-[var(--foreground)]">
@@ -31,7 +41,11 @@ export function Nav() {
         </a>
         <nav className="hidden md:flex items-center gap-8">
           {nav.links.map(link => (
-            <a key={link.label} href={link.href} className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors">
+            <a
+              key={link.label}
+              href={link.href}
+              className="nav-link text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition-colors duration-200"
+            >
               {link.label}
             </a>
           ))}
