@@ -1,11 +1,12 @@
 import { Nav } from '@/components/nav/Nav'
+import { Hero } from '@/components/sections/Hero'
 
 export default function Home() {
   return (
     <>
       <Nav />
-      <main className="min-h-screen pt-20">
-        <p className="p-8 text-[var(--muted)]">Sections coming soon…</p>
+      <main>
+        <Hero />
       </main>
     </>
   )
