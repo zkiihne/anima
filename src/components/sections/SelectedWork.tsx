@@ -9,7 +9,7 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
   return (
-    <div ref={ref} className="relative aspect-[4/3] w-full overflow-hidden">
+    <div ref={ref} className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
       <motion.div
         className="absolute inset-0"
         initial={{ clipPath: 'inset(0 0 100% 0)' }}
