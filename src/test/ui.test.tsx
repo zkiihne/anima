@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
+import { Hero } from '@/components/sections/Hero'
 
 describe('Button', () => {
   it('renders label', () => {
@@ -18,5 +19,12 @@ describe('Badge', () => {
   it('renders label', () => {
     render(<Badge>iF Design</Badge>)
     expect(screen.getByText('iF Design')).toBeInTheDocument()
+  })
+})
+
+describe('Hero', () => {
+  it('Hero renders showreel button', () => {
+    render(<Hero />)
+    expect(screen.getByText('Play showreel')).toBeInTheDocument()
   })
 })
