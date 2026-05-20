@@ -32,6 +32,11 @@ describe('content', () => {
       expect(a.tags.length).toBeGreaterThan(0)
     })
   })
+  it('each blog article has readTime', () => {
+    blog.articles.forEach(a => {
+      expect((a as any).readTime).toBeTruthy()
+    })
+  })
   it('clients has entries', () => {
     expect(clients.length).toBeGreaterThan(0)
   })

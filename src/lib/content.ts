@@ -130,6 +130,7 @@ export type BlogArticle = {
   title: string
   date: string
   author?: string
+  readTime: string
   tags: string[]
   href: string
 }
@@ -139,6 +140,7 @@ export const blog = {
     {
       title: 'Why and when we choose Payload or Storyblok',
       date: '8 May 2026',
+      readTime: '6 min read',
       tags: ['Development', 'E-commerce', 'Open-source', 'Strategy'],
       href: '#',
     },
@@ -146,12 +148,14 @@ export const blog = {
       title: 'What can\'t AI do for your business?',
       date: '5 May 2026',
       author: 'Ana Fernandes',
+      readTime: '4 min read',
       tags: ['AI', 'Strategy'],
       href: '#',
     },
     {
       title: 'When is the right time to start a business?',
       date: '29 April 2026',
+      readTime: '5 min read',
       tags: ['Strategy'],
       href: '#',
     },

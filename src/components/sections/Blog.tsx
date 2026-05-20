@@ -15,7 +15,7 @@ export function Blog() {
               <div>
                 <h3 className="mb-1 text-lg font-medium group-hover:underline">{article.title}</h3>
                 <p className="text-sm text-[var(--muted)]">
-                  {article.author ? `${article.author} · ` : ''}{article.date}
+                  {article.author ? `${article.author} · ` : ''}{article.date} · {article.readTime}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
