@@ -43,4 +43,12 @@ describe('content', () => {
       expect((p as any).image).toBeTruthy()
     })
   })
+  it('about has sections array with 4 items', () => {
+    expect(about.sections.length).toBe(4)
+    about.sections.forEach((s: any) => {
+      expect(s.title).toBeTruthy()
+      expect(s.body).toBeTruthy()
+      expect(s.cta).toBeTruthy()
+    })
+  })
 })

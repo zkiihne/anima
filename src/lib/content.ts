@@ -100,13 +100,29 @@ export const services = {
 }
 
 export const about = {
-  headline: 'Perfectionism freaks',
-  body: 'We are committed to excellence while maintaining random, quirky creativity and egg puns.',
-  handbook: [
-    { label: 'Mission and values', href: '#' },
-    { label: 'Culture', href: '#' },
-    { label: 'Perks', href: '#' },
-    { label: 'Career plans', href: '#' },
+  headline: 'Perfeggcionism freaks',
+  body: 'We obsess over craft — the kind that earns design awards and makes users feel like the product was made just for them. No shortcuts, no corners cut. Just beautifully executed work.',
+  sections: [
+    {
+      title: 'Mission & values',
+      body: 'We exist to make the digital world a little more thoughtful. Every product we ship carries that belief.',
+      cta: { label: 'Read the manifesto', href: '#' },
+    },
+    {
+      title: 'Culture',
+      body: 'Remote-first, async by default, and deeply committed to making work feel good — not just produce good output.',
+      cta: { label: 'See how we work', href: '#' },
+    },
+    {
+      title: 'Perks & benefits',
+      body: 'Competitive pay, flexible hours, home-office budget, and the kind of colleagues who push your craft forward.',
+      cta: { label: 'Browse perks', href: '#' },
+    },
+    {
+      title: 'Career plan',
+      body: 'We invest in growth with structured review cycles, a dedicated learning budget, and a clear ladder.',
+      cta: { label: 'See the ladder', href: '#' },
+    },
   ],
 }
 
