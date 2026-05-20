@@ -4,7 +4,7 @@ export const nav = {
     { label: 'Services', href: '#services' },
     { label: 'About', href: '#about' },
   ],
-  cta: { label: 'Get a quote', href: '#contact' },
+  cta: { label: 'Get a quote', href: '/get-a-quote' },
 }
 
 export const hero = {

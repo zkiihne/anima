@@ -7,7 +7,7 @@ export function Contact() {
       <AnimateIn>
         <h2 className="mb-4 text-4xl font-semibold md:text-6xl">Ready to build something?</h2>
         <p className="mb-10 max-w-xl text-lg text-[var(--muted)]">Tell us about your project and we'll get back to you within a day.</p>
-        <Button href="mailto:hello@anima.studio" variant="primary">Get a quote</Button>
+        <Button href="/get-a-quote" variant="primary">Get a quote</Button>
       </AnimateIn>
     </section>
   )
