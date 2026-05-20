@@ -38,4 +38,9 @@ describe('content', () => {
   it('footer has columns', () => {
     expect(footer.columns.length).toBeGreaterThan(0)
   })
+  it('each service pillar has an image', () => {
+    services.pillars.forEach(p => {
+      expect((p as any).image).toBeTruthy()
+    })
+  })
 })

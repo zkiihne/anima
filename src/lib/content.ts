@@ -78,9 +78,24 @@ export const services = {
   headline: 'Design-led digital products',
   body: 'We build digital products through thorough research, iterative experimentation, and data-minded decisions — with custom development tailored to user needs.',
   pillars: [
-    { title: 'Strategy', description: 'Research, discovery, and product thinking to set the right direction before a single pixel is drawn.', icon: 'https://significa.co/_app/immutable/assets/strategy.e14d50fc.webp' },
-    { title: 'Design', description: 'UI/UX design, prototyping, and brand identity — built for clarity, delight, and conversion.', icon: 'https://significa.co/_app/immutable/assets/design.e8a886bb.webp' },
-    { title: 'Development', description: 'Custom engineering that brings designs to life with performance and maintainability.', icon: 'https://significa.co/_app/immutable/assets/dev.c2a02856.webp' },
+    {
+      title: 'Strategy',
+      description: 'Research, discovery, and product thinking to set the right direction before a single pixel is drawn.',
+      icon: 'https://significa.co/_app/immutable/assets/strategy.e14d50fc.webp',
+      image: 'https://a.storyblok.com/f/198185/3200x2400/5e415e8ae5/ck_3.webp/m/1200x900/',
+    },
+    {
+      title: 'Design',
+      description: 'UI/UX design, prototyping, and brand identity — built for clarity, delight, and conversion.',
+      icon: 'https://significa.co/_app/immutable/assets/design.e8a886bb.webp',
+      image: 'https://a.storyblok.com/f/198185/1600x1200/d6164a5867/mishmash3.jpg/m/1200x900/',
+    },
+    {
+      title: 'Development',
+      description: 'Custom engineering that brings designs to life with performance and maintainability.',
+      icon: 'https://significa.co/_app/immutable/assets/dev.c2a02856.webp',
+      image: 'https://a.storyblok.com/f/198185/3840x3840/18f579a475/diathumb.jpeg/m/1200x900/',
+    },
   ],
 }
 
