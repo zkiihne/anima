@@ -5,6 +5,9 @@ import { SelectedWork } from '@/components/sections/SelectedWork'
 import { Services } from '@/components/sections/Services'
 import { About } from '@/components/sections/About'
 import { Blog } from '@/components/sections/Blog'
+import { Careers } from '@/components/sections/Careers'
+import { Clients } from '@/components/sections/Clients'
+import { Certifications } from '@/components/sections/Certifications'
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
         <Services />
         <About />
         <Blog />
+        <Careers />
+        <Clients />
+        <Certifications />
       </main>
     </>
   )
