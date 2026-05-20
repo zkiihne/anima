@@ -232,3 +232,35 @@ export const footer = {
   ],
   legal: '© 2026 Anima. All rights reserved.',
 }
+
+export type FAQItem = {
+  question: string
+  answer: string
+}
+
+export const faq: FAQItem[] = [
+  {
+    question: 'How long does a typical project take?',
+    answer: 'Most projects run 8–16 weeks depending on scope. Strategy and discovery take 2–4 weeks, design 3–6 weeks, and development 4–8 weeks. We work in parallel where possible.',
+  },
+  {
+    question: 'What does "design-led" actually mean?',
+    answer: 'Design drives every decision — from information architecture to micro-interactions. Developers are involved from day one, but the product experience always comes first.',
+  },
+  {
+    question: 'Do you work with early-stage startups?',
+    answer: 'Yes. We work across all stages — from 0-to-1 MVPs to established products needing a full redesign. Budget and scope shape the engagement model.',
+  },
+  {
+    question: 'What does a project cost?',
+    answer: "Projects start around €30k. Full-stack product work typically runs €60k–€150k+. We scope every project individually — reach out and we'll give you a clear picture.",
+  },
+  {
+    question: 'Can you work with our existing dev team?',
+    answer: 'Absolutely. We often deliver design systems, specifications, and component libraries that in-house teams build on top of.',
+  },
+  {
+    question: 'Do you offer ongoing retainers?',
+    answer: 'Yes — we have a small roster of long-term partners we support with design, product strategy, and development on a monthly basis.',
+  },
+]

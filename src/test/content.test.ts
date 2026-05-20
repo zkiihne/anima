@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { nav, hero, projects, selectedWork, services, about, blog, careers, clients, certifications, footer } from '@/lib/content'
+import { nav, hero, projects, selectedWork, services, about, blog, careers, clients, certifications, footer, faq } from '@/lib/content'
 
 describe('content', () => {
   it('nav has links and cta', () => {
@@ -54,6 +54,13 @@ describe('content', () => {
       expect(s.title).toBeTruthy()
       expect(s.body).toBeTruthy()
       expect(s.cta).toBeTruthy()
+    })
+  })
+  it('faq has at least 4 items', () => {
+    expect(faq.length).toBeGreaterThanOrEqual(4)
+    faq.forEach((item: any) => {
+      expect(item.question).toBeTruthy()
+      expect(item.answer).toBeTruthy()
     })
   })
 })
