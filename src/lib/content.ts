@@ -1,14 +1,14 @@
 export const nav = {
   links: [
-    { label: 'Projects', href: '#projects' },
+    { label: 'Work', href: '#work' },
     { label: 'Services', href: '#services' },
-    { label: 'About', href: '#about' },
+    { label: 'Contact', href: '#contact' },
   ],
-  cta: { label: 'Get a quote', href: '/get-a-quote' },
+  cta: { label: 'Book a call', href: '/get-a-quote' },
 }
 
 export const hero = {
-  words: ['Think.', 'Design.', 'Develop.', 'Launch.', 'Scale.'],
+  words: ['Think.', 'Create.', 'Automate.', 'Learn.', 'Evolve.'],
 }
 
 export type Project = {
@@ -45,7 +45,7 @@ export const selectedWork: SelectedProject[] = [
   {
     id: 'dia',
     title: 'Dia.',
-    description: 'An app to empower women in their fertility journey.',
+    description: 'A personalAgent built for fertility health. Tracks cycles, flags anomalies, and surfaces insights before they become concerns.',
     image: 'https://a.storyblok.com/f/198185/3840x3840/18f579a475/diathumb.jpeg/m/1440x1080/',
     href: 'https://significa.co/work/dia',
     awards: [
@@ -60,7 +60,7 @@ export const selectedWork: SelectedProject[] = [
   {
     id: 'mishmash',
     title: 'mishmash.',
-    description: 'Unique e-commerce design for the ultimate product experience.',
+    description: 'A professionalAgent for e-commerce operations. Handles product research, supplier outreach, and inventory decisions without being asked.',
     image: 'https://a.storyblok.com/f/198185/1600x1200/d6164a5867/mishmash3.jpg/m/1440x1080/',
     href: 'https://significa.co/work/mishmash',
     awards: [
@@ -75,24 +75,24 @@ export const selectedWork: SelectedProject[] = [
 ]
 
 export const services = {
-  headline: 'Design-led digital products',
-  body: 'We build digital products through thorough research, iterative experimentation, and data-minded decisions — with custom development tailored to user needs.',
+  headline: 'Agent setups built around you',
+  body: 'We design and deploy AI agent systems tailored to how you work. Each setup is configured, tested, and refined until it earns a permanent place in your life.',
   pillars: [
     {
-      title: 'Strategy',
-      description: 'Research, discovery, and product thinking to set the right direction before a single pixel is drawn.',
+      title: 'professionalAgent',
+      description: 'An AI agent built for work — handles research, drafting, scheduling, and admin so you focus on what moves the needle.',
       icon: 'https://significa.co/_app/immutable/assets/strategy.e14d50fc.webp',
       image: 'https://a.storyblok.com/f/198185/3200x2400/5e415e8ae5/ck_3.webp/m/1200x900/',
     },
     {
-      title: 'Design',
-      description: 'UI/UX design, prototyping, and brand identity — built for clarity, delight, and conversion.',
+      title: 'personalAgent',
+      description: 'Manages your calendar, tracks goals, surfaces what needs attention, and handles the friction of daily life.',
       icon: 'https://significa.co/_app/immutable/assets/design.e8a886bb.webp',
       image: 'https://a.storyblok.com/f/198185/1600x1200/d6164a5867/mishmash3.jpg/m/1200x900/',
     },
     {
-      title: 'Development',
-      description: 'Custom engineering that brings designs to life with performance and maintainability.',
+      title: 'builderAgent',
+      description: 'For those who want to go deeper. A customizable agent stack you can extend, chain, and automate on your own terms.',
       icon: 'https://significa.co/_app/immutable/assets/dev.c2a02856.webp',
       image: 'https://a.storyblok.com/f/198185/3840x3840/18f579a475/diathumb.jpeg/m/1200x900/',
     },
@@ -201,18 +201,16 @@ export const footer = {
     {
       title: 'Company',
       links: [
-        { label: 'Projects', href: '#projects' },
+        { label: 'Work', href: '#work' },
         { label: 'Services', href: '#services' },
-        { label: 'About', href: '#about' },
         { label: 'Blog', href: '#blog' },
         { label: 'Contact', href: '#contact' },
-        { label: 'Careers', href: '#careers' },
       ],
     },
     {
-      title: 'Handbook',
+      title: 'Learn',
       links: [
-        { label: 'Playbook', href: '#' },
+        { label: 'How it works', href: '#' },
         { label: 'Mission and values', href: '#' },
         { label: 'Culture', href: '#' },
         { label: 'How we collaborate', href: '#' },
@@ -221,10 +219,8 @@ export const footer = {
     {
       title: 'Social',
       links: [
-        { label: 'Instagram', href: '#' },
         { label: 'X', href: '#' },
         { label: 'LinkedIn', href: '#' },
-        { label: 'Behance', href: '#' },
         { label: 'GitHub', href: '#' },
         { label: 'YouTube', href: '#' },
       ],
@@ -240,27 +236,27 @@ export type FAQItem = {
 
 export const faq: FAQItem[] = [
   {
-    question: 'How long does a typical project take?',
-    answer: 'Most projects run 8–16 weeks depending on scope. Strategy and discovery take 2–4 weeks, design 3–6 weeks, and development 4–8 weeks. We work in parallel where possible.',
+    question: "What's the difference between the three products?",
+    answer: 'professionalAgent is for workplace productivity; personalAgent handles personal life and goals; builderAgent is for people who want to customize and extend. Most clients start with one and end up loving all three.',
   },
   {
-    question: 'What does "design-led" actually mean?',
-    answer: 'Design drives every decision — from information architecture to micro-interactions. Developers are involved from day one, but the product experience always comes first.',
+    question: 'How long does setup take?',
+    answer: 'Most setups are live within 1–2 weeks. We configure, test, and refine with you before handover.',
   },
   {
-    question: 'Do you work with early-stage startups?',
-    answer: 'Yes. We work across all stages — from 0-to-1 MVPs to established products needing a full redesign. Budget and scope shape the engagement model.',
+    question: 'Do I need any technical knowledge?',
+    answer: 'No. professionalAgent and personalAgent require nothing technical. builderAgent is designed for people who want to go deeper, but we guide you through it.',
   },
   {
-    question: 'What does a project cost?',
-    answer: "Projects start around €30k. Full-stack product work typically runs €60k–€150k+. We scope every project individually — reach out and we'll give you a clear picture.",
+    question: 'What tools do the agents work with?',
+    answer: 'We configure agents around your existing stack: calendar, email, Notion, Slack, and more. We map your tools in the first session.',
   },
   {
-    question: 'Can you work with our existing dev team?',
-    answer: 'Absolutely. We often deliver design systems, specifications, and component libraries that in-house teams build on top of.',
+    question: 'What happens after setup?',
+    answer: 'We monitor, tweak, and improve your setup over time. Monthly retainers are available if your needs grow.',
   },
   {
-    question: 'Do you offer ongoing retainers?',
-    answer: 'Yes — we have a small roster of long-term partners we support with design, product strategy, and development on a monthly basis.',
+    question: 'What does it cost?',
+    answer: "Pricing depends on the product and scope. Book a call and we'll give you a clear picture within 24 hours.",
   },
 ]

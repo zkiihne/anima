@@ -7,11 +7,13 @@ interface AnimateInProps {
   children: React.ReactNode
   className?: string
   delay?: number
+  immediate?: boolean
 }
 
-export function AnimateIn({ children, className, delay = 0 }: AnimateInProps) {
+export function AnimateIn({ children, className, delay = 0, immediate = false }: AnimateInProps) {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-80px' })
+  const scrollInView = useInView(ref, { once: true, margin: '-80px' })
+  const inView = immediate || scrollInView
   return (
     <motion.div
       ref={ref}
