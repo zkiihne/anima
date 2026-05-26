@@ -1,5 +1,5 @@
 'use client'
-import { motion, cubicBezier } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { hero } from '@/lib/content'
 
 const fadeUp = {
