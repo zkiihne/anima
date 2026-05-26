@@ -45,8 +45,8 @@ export type SelectedProject = {
 
 export const selectedWork: SelectedProject[] = [
   {
-    id: 'dia',
-    title: 'Dia.',
+    id: 'elaina',
+    title: 'Elaina.',
     description: 'A personalAgent built for fertility health. Tracks cycles, flags anomalies, and surfaces insights before they become concerns.',
     image: 'https://a.storyblok.com/f/198185/3840x3840/18f579a475/diathumb.jpeg/m/1440x1080/',
     href: 'https://significa.co/work/dia',
@@ -60,8 +60,8 @@ export const selectedWork: SelectedProject[] = [
     ],
   },
   {
-    id: 'mishmash',
-    title: 'mishmash.',
+    id: 'augustus',
+    title: 'Augustus.',
     description: 'A professionalAgent for e-commerce operations. Handles product research, supplier outreach, and inventory decisions without being asked.',
     image: 'https://a.storyblok.com/f/198185/1600x1200/d6164a5867/mishmash3.jpg/m/1440x1080/',
     href: 'https://significa.co/work/mishmash',
