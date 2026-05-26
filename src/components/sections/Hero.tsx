@@ -22,20 +22,12 @@ export function Hero() {
     <section className="flex flex-col px-6 pt-36 pb-20 md:px-12 md:pt-48 md:pb-28">
       <div className="mx-auto w-full max-w-[1440px]">
         <motion.h1
-          variants={container}
+          variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="font-semibold leading-[1.05] tracking-[-0.005em] text-[clamp(2.5rem,6vw,6rem)]"
+          className="font-semibold leading-[1.05] tracking-[-0.005em] text-[clamp(2.5rem,6vw,6rem)] max-w-4xl"
         >
-          {hero.words.map((w, i) => (
-            <motion.span
-              key={i}
-              variants={word}
-              className={`block md:inline-block md:mr-6 ${i === hero.words.length - 1 ? 'text-[var(--muted)]' : ''}`}
-            >
-              {w}
-            </motion.span>
-          ))}
+          {hero.headline}
         </motion.h1>
         <motion.p
           variants={fadeUp}
@@ -43,7 +35,7 @@ export function Hero() {
           animate="show"
           className="mt-10 max-w-lg text-lg text-[var(--muted)] md:text-xl"
         >
-          AI agent setups built around how you work, configured until they earn a permanent place in your life.
+          {hero.sub}
         </motion.p>
       </div>
     </section>

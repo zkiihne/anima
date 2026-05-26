@@ -3,18 +3,18 @@ import { GeistSans } from 'geist/font/sans'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Anima — Think. Design. Develop. Launch. Scale.',
-  description: 'We build design-led digital products through research, iterative experimentation, and custom development tailored to user needs.',
+  title: 'Anima — The best employee you'll ever hire.',
+  description: 'AI agents built around how you work. Shows up every day, never burns out, handles the work you keep putting off.',
   openGraph: {
-    title: 'Anima — Think. Design. Develop. Launch. Scale.',
-    description: 'We build design-led digital products through research, iterative experimentation, and custom development tailored to user needs.',
+    title: 'Anima — The best employee you'll ever hire.',
+    description: 'AI agents built around how you work. Shows up every day, never burns out, handles the work you keep putting off.',
     type: 'website',
     url: 'https://anima-ten-theta.vercel.app',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Anima — Think. Design. Develop. Launch. Scale.',
-    description: 'We build design-led digital products through research, iterative experimentation, and custom development tailored to user needs.',
+    title: 'Anima — The best employee you'll ever hire.',
+    description: 'AI agents built around how you work. Shows up every day, never burns out, handles the work you keep putting off.',
   },
 }
 

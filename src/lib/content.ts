@@ -4,10 +4,13 @@ export const nav = {
     { label: 'Services', href: '#services' },
     { label: 'Contact', href: '#contact' },
   ],
-  cta: { label: 'Book a call', href: '/get-a-quote' },
+  cta: { label: 'Hire yours', href: '/get-a-quote' },
 }
 
 export const hero = {
+  headline: "The best employee you'll ever hire.",
+  sub: 'Shows up every day. Never burns out. Handles the work you keep putting off. Anima builds AI agents that work the way you do — and get better over time.',
+  cta: { label: 'Hire yours', href: '/get-a-quote' },
   words: ['Think.', 'Create.', 'Automate.', 'Learn.', 'Evolve.'],
 }
 
@@ -75,24 +78,24 @@ export const selectedWork: SelectedProject[] = [
 ]
 
 export const services = {
-  headline: 'Agent setups built around you',
-  body: 'We design and deploy AI agent systems tailored to how you work. Each setup is configured, tested, and refined until it earns a permanent place in your life.',
+  headline: 'Built for your work. Not someone else\'s.',
+  body: 'Every agent is configured around how you actually operate — your tools, your rhythm, your priorities. We build it, refine it, and stay on it until it earns its keep.',
   pillars: [
     {
       title: 'professionalAgent',
-      description: 'An AI agent built for work — handles research, drafting, scheduling, and admin so you focus on what moves the needle.',
+      description: 'Your go-to for the job. Research, drafts, scheduling, inbox management — the assistant you always wanted but never had time to train.',
       icon: 'https://significa.co/_app/immutable/assets/strategy.e14d50fc.webp',
       image: 'https://a.storyblok.com/f/198185/3200x2400/5e415e8ae5/ck_3.webp/m/1200x900/',
     },
     {
       title: 'personalAgent',
-      description: 'Manages your calendar, tracks goals, surfaces what needs attention, and handles the friction of daily life.',
+      description: 'Life admin, handled. Goals tracked, calendar managed, the right things surfaced at the right time. Less friction. More headspace.',
       icon: 'https://significa.co/_app/immutable/assets/design.e8a886bb.webp',
       image: 'https://a.storyblok.com/f/198185/1600x1200/d6164a5867/mishmash3.jpg/m/1200x900/',
     },
     {
       title: 'builderAgent',
-      description: 'For those who want to go deeper. A customizable agent stack you can extend, chain, and automate on your own terms.',
+      description: 'For the ones who want to go further. Chain agents, automate workflows, build your own stack — with someone who knows the territory.',
       icon: 'https://significa.co/_app/immutable/assets/dev.c2a02856.webp',
       image: 'https://a.storyblok.com/f/198185/3840x3840/18f579a475/diathumb.jpeg/m/1200x900/',
     },
@@ -100,28 +103,28 @@ export const services = {
 }
 
 export const about = {
-  headline: 'Perfeggcionism freaks',
-  body: 'We obsess over craft — the kind that earns design awards and makes users feel like the product was made just for them. No shortcuts, no corners cut. Just beautifully executed work.',
+  headline: 'We build agents that actually stick.',
+  body: 'Most AI tools get used twice and forgotten. We build agents people rely on every day — because we don\'t hand over a config and disappear. We stay until it works like an employee who\'s been with you for years.',
   sections: [
     {
-      title: 'Mission & values',
-      body: 'We exist to make the digital world a little more thoughtful. Every product we ship carries that belief.',
-      cta: { label: 'Read the manifesto', href: '#' },
+      title: 'Why it works',
+      body: 'We start with how you work, not with what the technology can do. The agent fits around you — not the other way around.',
+      cta: { label: 'How it works', href: '#' },
     },
     {
-      title: 'Culture',
-      body: 'Remote-first, async by default, and deeply committed to making work feel good — not just produce good output.',
-      cta: { label: 'See how we work', href: '#' },
+      title: 'Who we are',
+      body: 'A small team that\'s spent years figuring out what makes AI useful in practice. We\'ve seen what fails and why. We build accordingly.',
+      cta: { label: 'About us', href: '#' },
     },
     {
-      title: 'Perks & benefits',
-      body: 'Competitive pay, flexible hours, home-office budget, and the kind of colleagues who push your craft forward.',
-      cta: { label: 'Browse perks', href: '#' },
+      title: 'How we work',
+      body: 'Remote-first, fast-moving, and honest about what\'s possible. We\'d rather set the right expectations than oversell.',
+      cta: { label: 'Our process', href: '#' },
     },
     {
-      title: 'Career plan',
-      body: 'We invest in growth with structured review cycles, a dedicated learning budget, and a clear ladder.',
-      cta: { label: 'See the ladder', href: '#' },
+      title: 'Our commitment',
+      body: 'Setup isn\'t the end. We monitor, improve, and evolve your agent as your needs change.',
+      cta: { label: 'See retainer options', href: '#' },
     },
   ],
 }
@@ -165,7 +168,7 @@ export const blog = {
 export const careers = {
   headline: 'Join us',
   listings: [
-    { title: 'Product Designer', type: 'Full-time', href: 'mailto:hello@anima.studio?subject=Product Designer Application' },
+    { title: 'AI Agent Consultant', type: 'Full-time', href: 'mailto:hello@anima.studio?subject=AI Agent Consultant Application' },
   ],
 }
 
@@ -236,27 +239,27 @@ export type FAQItem = {
 
 export const faq: FAQItem[] = [
   {
-    question: "What's the difference between the three products?",
-    answer: 'professionalAgent is for workplace productivity; personalAgent handles personal life and goals; builderAgent is for people who want to customize and extend. Most clients start with one and end up loving all three.',
+    question: 'What does an agent actually do?',
+    answer: 'Whatever you keep delegating to the bottom of your to-do list. Research, drafts, scheduling, reminders, follow-ups — the repeatable work that eats your day.',
   },
   {
-    question: 'How long does setup take?',
-    answer: 'Most setups are live within 1–2 weeks. We configure, test, and refine with you before handover.',
+    question: 'How is this different from just using ChatGPT?',
+    answer: 'ChatGPT is a tool. An agent is a system. We build it around your specific workflows, connect it to your actual tools, and refine it until it works without you thinking about it.',
   },
   {
-    question: 'Do I need any technical knowledge?',
-    answer: 'No. professionalAgent and personalAgent require nothing technical. builderAgent is designed for people who want to go deeper, but we guide you through it.',
+    question: 'How long until it\'s up and running?',
+    answer: 'Most setups are live within 1–2 weeks. We configure and test with you before handover.',
   },
   {
-    question: 'What tools do the agents work with?',
-    answer: 'We configure agents around your existing stack: calendar, email, Notion, Slack, and more. We map your tools in the first session.',
+    question: 'Do I need to be technical?',
+    answer: 'No. professionalAgent and personalAgent require nothing from you technically. builderAgent is for people who want to go deeper — we guide you through it.',
   },
   {
-    question: 'What happens after setup?',
-    answer: 'We monitor, tweak, and improve your setup over time. Monthly retainers are available if your needs grow.',
+    question: 'What tools does it connect to?',
+    answer: 'Whatever you\'re already using — calendar, email, Notion, Slack, and more. We map your stack in the first session.',
   },
   {
     question: 'What does it cost?',
-    answer: "Pricing depends on the product and scope. Book a call and we'll give you a clear picture within 24 hours.",
+    answer: "Depends on scope. Book a call and we'll give you a clear picture within 24 hours.",
   },
 ]
