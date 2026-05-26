@@ -34,7 +34,7 @@ export function SelectedWork() {
   return (
     <section id="work" className="py-24">
       <AnimateIn delay={1.1} immediate>
-        <h2 className="mb-8 px-6 text-3xl font-semibold md:mb-14 md:px-12 md:text-5xl">Agents in action.</h2>
+        <h2 className="mb-8 px-6 text-3xl font-semibold md:mb-14 md:px-12 md:text-5xl">What we&apos;ve shipped.</h2>
       </AnimateIn>
       <div className="flex flex-col gap-0">
         {selectedWork.map((project, i) => (

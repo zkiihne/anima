@@ -8,10 +8,9 @@ export const nav = {
 }
 
 export const hero = {
-  headline: "The best employee you'll ever hire.",
+  lines: ['the best employee', "you'll ever have."],
   sub: 'Shows up every day. Never burns out. Handles the work you keep putting off. Anima builds AI agents that work the way you do — and get better over time.',
   cta: { label: 'Hire yours', href: '/get-a-quote' },
-  words: ['Think.', 'Create.', 'Automate.', 'Learn.', 'Evolve.'],
 }
 
 export type Project = {
