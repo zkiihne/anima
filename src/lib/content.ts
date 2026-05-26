@@ -77,24 +77,24 @@ export const selectedWork: SelectedProject[] = [
 ]
 
 export const services = {
-  headline: 'Built for your work. Not someone else\'s.',
-  body: 'Every agent is configured around how you actually operate — your tools, your rhythm, your priorities. We build it, refine it, and stay on it until it earns its keep.',
+  headline: 'Built on three principles.',
+  body: "Every agent we build is proactive, transparent, and self-correcting. That's what separates a tool you use from an employee you trust.",
   pillars: [
     {
-      title: 'professionalAgent',
-      description: 'Your go-to for the job. Research, drafts, scheduling, inbox management — the assistant you always wanted but never had time to train.',
+      title: 'Proactive',
+      description: "Doesn't wait to be asked. Surfaces what needs attention, takes the next step, and handles the repeatable work before it lands on your plate.",
       icon: 'https://significa.co/_app/immutable/assets/strategy.e14d50fc.webp',
       image: 'https://a.storyblok.com/f/198185/3200x2400/5e415e8ae5/ck_3.webp/m/1200x900/',
     },
     {
-      title: 'personalAgent',
-      description: 'Life admin, handled. Goals tracked, calendar managed, the right things surfaced at the right time. Less friction. More headspace.',
+      title: 'Visibility',
+      description: "You always know what it's doing and why. Full transparency into actions, decisions, and outcomes — so you stay in control without micromanaging.",
       icon: 'https://significa.co/_app/immutable/assets/design.e8a886bb.webp',
       image: 'https://a.storyblok.com/f/198185/1600x1200/d6164a5867/mishmash3.jpg/m/1200x900/',
     },
     {
-      title: 'builderAgent',
-      description: 'For the ones who want to go further. Chain agents, automate workflows, build your own stack — with someone who knows the territory.',
+      title: 'Resilient',
+      description: "Handles the unexpected without breaking. When something changes, it adapts — not fails. Built to keep running even when things don't go to plan.",
       icon: 'https://significa.co/_app/immutable/assets/dev.c2a02856.webp',
       image: 'https://a.storyblok.com/f/198185/3840x3840/18f579a475/diathumb.jpeg/m/1200x900/',
     },
